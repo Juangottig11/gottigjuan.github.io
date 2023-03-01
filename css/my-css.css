@@ -1,0 +1,218 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*-----my styles css-------*/
+.color-one{
+    color: #FF0099;
+    transition: .5s;
+}
+.color-o{
+    color: #3023AE;
+}
+.color-one:hover{
+    color: #3023AE;
+    text-shadow: 1px  7px #FF0099;
+    transition: .5s;
+}
+
+.bg{
+    width: 100%;
+    height: 90vh;
+}
+.bg-color{
+    background-image: linear-gradient(to right,rgb(255, 255, 255) 15%,#efefef);
+}
+.bg-color-two{
+    background-image: linear-gradient(to left,rgb(255, 255, 255) 22%,rgb(0, 0,0));
+}
+.bg-grad{
+    background-image: url(../images/pexels-andrew-neel-1967535.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -10;
+}
+.bg-grad::before{
+    position: absolute;
+    content:'';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255) 22%,rgba(0, 0,0, 0.85));
+    z-index: -6;
+}
+.bg-grad-invert{
+    background-image: url(../images/pexels-andrew-neel-1967535.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -10;
+}
+.bg-grad-invert::before{
+    position: absolute;
+    content:'';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top,rgba(255, 255, 255) 22%,rgba(0, 0,0, 0.85));
+    z-index: -6;
+}
+.bg-img{
+    background-image: url(../images/pexels-andrew-neel-1967535.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -10;
+}
+.bg-img::before{
+    position: absolute;
+    content:'';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to left,rgba(255, 255, 255, .88) 22%,rgba(0, 0,0, 0.85));
+    z-index: -6;
+}
+
+.my-h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.my-tx-h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.text-dev{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.my-text{
+    font-size: 35px;
+    font-weight: bold;
+}
+.text-li{
+    font-size: 22px;
+    font-weight: bold;
+}
+.my-font{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.gradient-text{
+    background-image: linear-gradient( to right,#FF0099 ,#3023AE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.shadow{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+}
+.fixed-top{
+    position: sticky;
+    top: 0;
+}
+/*-----fin my style css*/
+/*---hero css*/
+.black-box  {
+    width: 290px;
+    height: 290px;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    background-image: linear-gradient(-225deg,#FFFFFF 0%,rgba(255,255,255,0) 40%,
+  rgba(0,255,255,0) 60%,#0ff 100%),linear-gradient(45deg,#3023AE 0%,#FF0099 100%);
+    overflow: hidden;
+}
+/*--- class img----*/
+.img{
+    width: 290px;
+}
+/*---Fin class img----*/
+/*---Fin my hero----*/
+
+/*---Sobre mí---*/
+
+.padd-s-m-container{
+    padding: 60px 0px;
+}
+.sobre-mi-padd{
+    padding: 35px 20px;
+}
+.text-s-m{
+text-align: center;
+padding: 20px 0px;
+border-top: 3px solid #3023AE;
+border-bottom:3px solid #3023AE;
+}
+.s-m-padd{
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    color: #3023AE;
+}
+.my-f-bold{
+    font-weight: bold;
+    font-size: 21px;
+}
+.p-description{
+    font-size: 22px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-top: 3px solid #3023AE;
+    border-bottom:3px solid #3023AE;
+}
+.cont-s-m-claro{
+    background-color: #FFFFFF;
+    border: 4px solid #3023AE;
+    border-radius: 20px;
+    box-shadow: #000000 6px 6px 8px;
+}
+.margin-neg{
+    margin-top: -200px;
+}
+/*----Educacion----*/
+.educacion{
+    border-left: 4px solid #3023AE;
+    padding-left: 15px;
+}
+.fig{
+    width: 30px;
+    height: 30px;
+    background-color:#3023AE;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: -33px;
+}
+@media screen and (max-width: 768px){
+    .my-h1{
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .my-tx-h2{
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+    .text-dev{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .my-text{
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
